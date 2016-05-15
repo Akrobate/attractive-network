@@ -20,6 +20,7 @@ export class FriendsComponent implements OnActivate {
     private currSegment: RouteSegment;
     private selectedId: number;
     
+    
      constructor(
         private service: FriendsService,
         private router: Router) {

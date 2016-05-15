@@ -1,28 +1,18 @@
-<!--
-<ul class="items">
-    <li *ngFor="let friend of friends"
-    [class.selected]="isSelected(friend)"
-    (click)="onSelect(friend)">
-    <span class="badge">{{friend.id}}</span> {{friend.name}}
-    </li>
-</ul>
--->
-
 <div class="row" custom-full-height="true">
-    <div *ngFor="let friend of friends" class="col-sm-12">
+    <div *ngFor="let link of links" class="col-sm-12">
         <div class="panel panel-default">
             <div class="panel-body">
                 <div class="row">
                     <div class="col-sm-4">
-                        <img src="{{friend.photo}}" class="roundedImage" />
+                        <!--img src="{{link.value}}" class="roundedImage" /-->
                     </div>
                     <div class="col-sm-8">
                         <p class="text-right">
-                            {{friend.name}}
+                            {{link.value}}
                         </p>
                         <p class="text-right">
                             <span class="glyphicon glyphicon-star-empty"></span> 
-                            <a href="#/messages/writeto/{{friend.id}}"><span class="glyphicon glyphicon-envelope"></span></a> 
+                            <a href="#/messages/writeto/{{link.id}}"><span class="glyphicon glyphicon-envelope"></span></a> 
                         </p>
                     </div>
                 </div>
