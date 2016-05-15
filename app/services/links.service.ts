@@ -1,26 +1,44 @@
 import {Injectable} from '@angular/core';
+import {Observable}     from 'rxjs/Rx';
+import {Link} from '../items/link';
 
+/*
 export class Link {
   constructor(public id: number, public name: string) { }
 }
+*/
 
-let Links = [
-  new Link(11, 'Mr. Nice'),
-  new Link(12, 'Narco'),
-  new Link(13, 'Bombasto'),
-  new Link(14, 'Celeritas'),
-  new Link(15, 'Magneta'),
-  new Link(16, 'RubberMan')
-];
+let Links: Link[] = [];
+//let link = new(id,from_user_id,to_user_id,value, created, viewed, archived);
 
-let LinksPromise = Promise.resolve(Links);
+
+
+//let LinksPromise = Promise.resolve(Links);
 
 @Injectable()
-export class LinkService {
-  getLinks() { return LinksPromise; }
-
+export class LinksService {
+  // old link
+  //getLinks() { return LinksPromise; }
+/*
   getLink(id: number | string) {
     return LinksPromise
       .then(Links => Links.filter(h => h.id === +id)[0]);
   }
+  */
+  
+  
+  getLinks ():Link[] { 
+ 
+    var links = [
+        new Link(1,1,2, "Un lien bien sympa", null, null, null),
+        new Link(2,1,2, "Un lien bien sympa 2", null, null, null),
+        new Link(3,1,2, "Un lien bien sympa 3", null, null, null),
+        new Link(4,1,2, "Un lien bien sympa 4", null, null, null),
+    ];
+    
+    return links;
+        
+  }
+  
+  
 }
