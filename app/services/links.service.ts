@@ -3,7 +3,7 @@ import {Observable}     from 'rxjs/Rx';
 import {Link} from '../items/link';
 
 
-  let links = [
+  let Links = [
         new Link(1,1,2, "Un lien bien sympa", null, null, null),
         new Link(2,1,2, "Un lien bien sympa 2", null, null, null),
         new Link(3,1,2, "Un lien bien sympa 3", null, null, null),
@@ -22,7 +22,7 @@ export class Link {
 //let link = new(id,from_user_id,to_user_id,value, created, viewed, archived);
 
 
-let LinksPromise = Promise.resolve(links);
+let LinksPromise = Promise.resolve(Links);
 
 @Injectable()
 export class LinksService {

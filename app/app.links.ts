@@ -24,6 +24,15 @@ export class LinksComponent implements OnActivate {
        // private service: LinksService,
         private router: Router) {
             
+            
+        let Links = [
+            new Link(1,1,2, "Un lien bien sympa", null, null, null),
+            new Link(2,1,2, "Un lien bien sympa 2", null, null, null),
+            new Link(3,1,2, "Un lien bien sympa 3", null, null, null),
+            new Link(4,1,2, "Un lien bien sympa 4", null, null, null),
+        ];
+            
+            this.links = Links;      
             //this.service.getLinks().subscribe(links => 
              //   this.Links = Links);
              /*
