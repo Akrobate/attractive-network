@@ -6,18 +6,16 @@ import {Component} from '@angular/core';
 @Component({
     selector: 'my-component',
     template: `
-        <h1>My First Angular 2333 App</h1>
-        <div class="jumbotron">
+		<div class="jumbotron">
             <h1>
-            <span class="text-muted">Nuit</span><strong><span style="color:orange">Li</span><span style="color:black">qui</span><span style="color:red">de</span></strong>
-        </h1>
-        <p class="lead">
-            Donnez votre avis sur des propositions à travers une éxpérience de démocratie liquide
-        </p>
+            	<span class="text-muted">Nuit</span><strong><span style="color:orange">Li</span><span style="color:black">qui</span><span style="color:red">de</span></strong>
+        	</h1>
+			<p class="lead">
+				Donnez votre avis sur des propositions à travers une éxpérience de démocratie liquide
+			</p>
         </div>
 
-
-<div class="row" >
+		<div class="row" >
 		<div class="col-md-4">
 			<p class="lead">
      			Première visite?
