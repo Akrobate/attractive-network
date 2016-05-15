@@ -1,12 +1,13 @@
 import {Component} from '@angular/core';
+import {FriendsComponent} from './app.friends';
 //import {  } from 'ng2-bootstrap/ng2-bootstrap';
 
 
 
 @Component({
-    selector: 'my-component',
+    selector: 'dashboard',
     templateUrl: 'views/dashboard.html',
-    directives: []
+    directives: [FriendsComponent]
 })
 
-export class AppComponent { }
+export class DashboardComponent { }

@@ -5,29 +5,20 @@
     <!-- Add your site or application content here -->
     <div class="container">
       <div class="header">
+        
         <ul class="nav nav-pills pull-right">
-          <li is-active="active" >
-          	<a ng-href="#/"><span class="glyphicon glyphicon-home"></span></a></li>
-          	
-          	
-          <li is-active="active"><a style="" ng-href="#/dashboard"><span class="glyphicon glyphicon-scale"></span></a></li>
-          <li is-active="active"><a style="" ng-href="#/propositions"><span class="glyphicon glyphicon-list-alt"></span></a></li>
-          <li is-active="active" if-connected="show"><a style="" ng-href="#/myprofile"><span class="glyphicon glyphicon-user"></span></a></li>
-
-          <li is-active="active"><a ng-href="#/about">About</a></li>
-
-          <li is-active="active"  if-connected="show"><a style="color:red" ng-href="#/logout"><span style="color:red" class=" glyphicon  glyphicon-off"></span></a></li>
-          <li is-active="active"  if-connected="hide"><a style="" ng-href="#/myprofile"><span class=" glyphicon glyphicon-record"></span></a></li>         
-          
-
+          <li><a [routerLink]="['/']"><span class="glyphicon glyphicon-home"></span></a></li>
+          <li><a [routerLink]="['/dashboard']"><span class="glyphicon glyphicon-scale"></span></a></li>
+          <li if-connected="hide"><a style="" ng-href="#/myprofile"><span class=" glyphicon glyphicon-record"></span></a></li>
         </ul>
+        
         <h3 class="text-muted">
         	<span style="color:red" class="glyphicon glyphicon-link"></span>
 			    AttractiveNetwork
 	    	</h3>
       </div>
-
-      <my-component></my-component>
+            
+      <router-outlet></router-outlet>
       
       <div class="footer">
         <p><span class="glyphicon glyphicon-heart"></span> from the AttractiveNetwork team - 2016</p>
