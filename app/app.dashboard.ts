@@ -5,7 +5,7 @@ import {Component} from '@angular/core';
 
 @Component({
     selector: 'my-component',
-    templateUrl: 'views/component.html',
+    templateUrl: 'views/dashboard.html',
     directives: []
 })
 
