@@ -32,6 +32,9 @@ export class FriendsService {
             .map(this.extractData)
             .catch(this.handleError);
     }
+    
+    
+    
       
     getFriend(id: number | string) {
         return FriendsPromise
